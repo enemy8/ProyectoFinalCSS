@@ -1,0 +1,201 @@
+#contenido{
+  background-color: #82c3a6;
+
+}
+
+header{
+  font-family: 'Dancing Script';
+  background-color: #5b7989;
+  color: white;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  animation: slidein 1.5s;
+}
+
+
+
+header h1{
+    text-shadow: 2px 2px 2px  #02010a;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+  }
+
+body{
+  background-color: #02010a;
+}
+
+h1, #menu{
+  margin: auto;
+}
+
+h1{
+  margin-right: 5vw;
+}
+
+#menu{
+  margin-left: 5vw;
+}
+
+.Inicio{
+  text-decoration: none;
+}
+
+a{
+  color: white;
+  font-size: 2em;
+  padding-left: 20px;
+}
+
+#contenido {
+text-align: center;
+max-width: 900px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#menu{
+  max-width: 900px;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+figure img{
+padding-bottom: 25px;
+}
+
+#secundario{
+  display: flex;
+  background-color: #d5c75f;
+    max-width: 900px;
+    border: 1px;
+		margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.principal{
+  margin-bottom: 0;
+  background-color: #82c3a6;
+}
+
+.secundaria{
+padding-left: 90px;
+padding-top: 20px;
+}
+
+.retratos{
+  padding-top: 14px;
+  padding-left: 80px;
+}
+.image{
+     width: 90%;
+    -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+    filter:drop-shadow(2px 2px 2px #02010a);
+}
+
+.image2{
+  width: 80%;
+    -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+    filter:drop-shadow(2px 2px 2px #02010a);
+}
+
+.image1{
+  width: 95%;
+  -webkit-filter:drop-shadow(2px 2px 2px #02010a);
+  filter:drop-shadow(2px 2px 2px #02010a);
+}
+
+.image1:hover{
+  transition: background 1s;
+  animation: miAnimacion 2s;
+  text-shadow: 2px 2px 2px #82c3a6;
+}
+
+.image2:hover{
+  transition: background 1s;
+  animation: miAnimacion1 2s;
+  text-shadow: 2px 2px 2px #82c3a6;
+}
+
+@-webkit-keyframes miAnimacion {
+  from{
+transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes miAnimacion1 {
+  from{
+transform: translate(none);
+  }
+  to{
+    transform: translate(20px, -5px);
+  }
+}
+
+@-webkit-keyframes slidein{
+0% {
+  margin-top: 150%;
+}
+60% {
+  margin-top: -5%;
+}
+100% {
+  margin-top: 0%
+}
+}
+
+figure a{
+  color: black;
+text-align: justify;
+}
+
+
+footer{
+font-family: 'Dancing Script';
+background-color: #C6d5c5;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+max-width: 900px;
+display: flex;
+flex-direction: row;
+border-radius: 0px 0px 10px 10px;
+-moz-border-radius: 0px 0px 10px 10px;
+-webkit-border-radius: 0px 0px 10px 10px;
+}
+
+@media (max-width:899px) {
+
+  #secundario {
+  display: flex;
+  flex-direction: column;
+  }
+    header{
+  display: flex;
+  flex-direction: column;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+.principal{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  }
+
+	@media (min-width:900px) {
+	    #contenido {
+
+	      }
+	}
